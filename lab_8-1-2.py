@@ -22,3 +22,37 @@ The function should use a for loop and print each invitation after it is generat
 
 
 """
+# Liam O'Hara
+
+def calculate_sum(n):
+    """
+    Calculates the sum of numbers up to and including the given integer.
+    """
+    total_sum = 0
+    for i in range(1, n + 1):
+        total_sum += i
+    return total_sum
+
+# Input to get integer
+user_input = int(input("Enter an integer: "))
+
+# Find the sum using defined input
+result_sum = calculate_sum(user_input)
+
+# Print the answer or sum
+print(f"The sum of numbers up to {user_input} is: {result_sum}")
+
+def generate_party_invitations(names):
+    """
+    prints party invitation with the persons name in the email.
+
+    """
+    for name in names:
+        invitation = f"Hi {name}, You're invited to my party on Friday!"
+        print(invitation)
+
+# list of names:
+names_list = ["Matt", "Dylan", "Michael"]
+
+# Generate party invites
+generate_party_invitations(names_list)
